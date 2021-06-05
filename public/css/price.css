@@ -1,0 +1,91 @@
+.bg-gradient {
+    background: #C9D6FF;
+    background: -webkit-linear-gradient(to right, #E2E2E2, #C9D6FF); 
+    background: linear-gradient(to right, #e71010, #611f8a);
+    } 
+    ul li {
+      margin-bottom:1.4rem;
+    }
+    .pricing-divider {
+    border-radius: 20px;
+    background: #C64545;
+    padding: 1em 0 4em;
+    position: relative;
+    }
+    .orange .pricing-divider{
+    background: #FF6501; 
+    }
+    .green .pricing-divider {
+    background: #1AA85C; 
+    }
+    .purple .pricing-divider{
+      background: #6A006F; 
+      }
+    .red b {
+      color:#C64545
+    }
+    .orange b {
+      color:#FF6501
+    }
+    .green b {
+      color:#1AA85C
+    }
+
+    .purple b {
+      color:#6A006F
+    }
+    .pricing-divider-img {
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 100%;
+        height: 80px;
+    }
+    .deco-layer {
+        -webkit-transition: -webkit-transform 0.5s;
+        transition: transform 0.5s;
+    }
+    .btn-custom  {
+      background:#C64545; color:#fff; border-radius:20px
+    }
+
+    .btn-custom-orange{
+      background:#FF6501; color:#fff; border-radius:20px
+    }
+
+    .btn-custom-purple{
+      background:#6A006F; color:#fff; border-radius:20px
+    }
+    .img-float {
+      width:50px; position:absolute;top:-3.5rem;right:1rem
+    }
+    
+    .princing-item {
+      transition: all 150ms ease-out;
+    }
+    .princing-item:hover {
+      transform: scale(1.05);
+    }
+    .princing-item:hover .deco-layer--1 {
+      -webkit-transform: translate3d(15px, 0, 0);
+      transform: translate3d(15px, 0, 0);
+    }
+    .princing-item:hover .deco-layer--2 {
+      -webkit-transform: translate3d(-15px, 0, 0);
+      transform: translate3d(-15px, 0, 0);
+    }
+    .card-pricing.popular {
+      z-index: 1;
+      border: 3px solid #007bff;
+    }
+    .card-pricing .list-unstyled li {
+      padding: .5rem 0;
+      color: #6c757d;
+    }
+    .back-utp{
+      background-color: blueviolet;
+    }
+    /* Credit to https://bootsnipp.com/snippets/qr7AD */
+    
+    
+    

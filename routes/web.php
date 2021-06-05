@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\CadastrosController;
+use App\Http\Controllers\HomeController;
+use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,4 +18,35 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
+});
+
+Route::get('/about', function() {
+    return view('about');
+});
+
+Route::get('/plans', function () {
+    //return view('plans');
+    return Redirect::to('https://sistema.m2dtelecom.com.br/index.php?tipo=ecommerce&page=produtos');
+});
+
+Route::get('/coverage', function () {
+    return view('coverage');
+});
+
+Route::get('/support', function () {
+    return view('support');
+});
+
+Route::get('/help', function () {
+    return view('help');
+});
+
+Route::get('/newsletter', function () {
+    return view('newsletter');
+});
+
+Route::prefix('admin')->middleware(['auth:sanctum', 'verified'])->group(function (){
+    Route::get('home', [HomeController::class, 'index'])->name('dashboard');
+    Route::get('cadastros', [CadastrosController::class, 'index'])->name('cadastros');
+    Route::get('ceps', [\App\Http\Controllers\CepController::class, 'index'])->name('ceps');
 });

@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 
 
 use App\Models\Cadastros;
-use Illuminate\Database\Eloquent\Collection;
+use Illuminate\Http\Request;
 
 class CadastrosController extends Controller
 {
@@ -18,5 +18,12 @@ class CadastrosController extends Controller
         });
 
         return view('Admin.cadastros', ['soma' => $soma, 'cadastros' => $cadastros]);
+    }
+
+    public function update(Request $request)
+    {
+        $cadastro = Cadastros::where('id', $request->id)->first();
+
+        return view('Admin.Edit.cadastros', ['cadastro' => $cadastro]);
     }
 }

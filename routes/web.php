@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\CadastrosController;
+use App\Http\Controllers\CepController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Route;
@@ -46,7 +47,14 @@ Route::get('/newsletter', function () {
 });
 
 Route::prefix('admin')->middleware(['auth:sanctum', 'verified'])->group(function (){
+    Route::get('/', function (){
+        return redirect('admin/home');
+    });
     Route::get('home', [HomeController::class, 'index'])->name('dashboard');
     Route::get('cadastros', [CadastrosController::class, 'index'])->name('cadastros');
-    Route::get('ceps', [\App\Http\Controllers\CepController::class, 'index'])->name('ceps');
+    Route::get('ceps', [CepController::class, 'index'])->name('ceps');
+
+    Route::prefix('edit')->group(function (){
+        Route::get('cadastros/{id}', [CadastrosController::class, 'update'])->name('edit-cadastros');
+    });
 });

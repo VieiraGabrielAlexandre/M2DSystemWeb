@@ -53,6 +53,7 @@ Route::prefix('admin')->middleware(['auth:sanctum', 'verified'])->group(function
     Route::get('home', [HomeController::class, 'index'])->name('dashboard');
     Route::get('cadastros', [CadastrosController::class, 'index'])->name('cadastros');
     Route::get('ceps', [CepController::class, 'index'])->name('ceps');
+    Route::get('novo-cep', [CepController::class, 'create'])->name('novo-cep');
 
     Route::prefix('edit')->group(function (){
         Route::get('cadastros/{id}', [CadastrosController::class, 'show'])->name('edit-cadastros');
@@ -60,5 +61,6 @@ Route::prefix('admin')->middleware(['auth:sanctum', 'verified'])->group(function
 
     Route::prefix('salvar')->group(function (){
         Route::post('cadastros/{id}', [CadastrosController::class, 'update'])->name('atualizar.cadastro');
+        Route::post('cep', [CepController::class, 'salvar'])->name('salvar.cep');
     });
 });

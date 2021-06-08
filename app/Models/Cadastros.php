@@ -10,6 +10,17 @@ class Cadastros extends Model
 {
     protected $table = 'table_cadastros';
 
+    protected $fillable = [
+        'nome',
+        'email',
+        'cep',
+        'status',
+        'alterado_por',
+        'plano',
+        'telefone',
+        'telefone_2'
+    ];
+
     public static function todosCadastros()
     {
         return self::all();

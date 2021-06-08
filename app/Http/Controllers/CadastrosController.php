@@ -20,8 +20,26 @@ class CadastrosController extends Controller
         return view('Admin.cadastros', ['soma' => $soma, 'cadastros' => $cadastros]);
     }
 
+    public function show(Request $request)
+    {
+        $cadastro = Cadastros::where('id', $request->id)->first();
+
+        return view('Admin.Edit.cadastros', ['cadastro' => $cadastro]);
+    }
+
     public function update(Request $request)
     {
+        Cadastros::where('id', $request->id)
+            ->update([
+                'nome' => $request->name,
+                'status' => $request->status,
+                'email' => $request->email,
+                'plano' => $request->plano,
+                'telefone' => $request->telefone,
+                'telefone_2' => $request->telefone_2,
+                'cep' => $request->cep
+            ]);
+
         $cadastro = Cadastros::where('id', $request->id)->first();
 
         return view('Admin.Edit.cadastros', ['cadastro' => $cadastro]);

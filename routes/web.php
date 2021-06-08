@@ -55,6 +55,10 @@ Route::prefix('admin')->middleware(['auth:sanctum', 'verified'])->group(function
     Route::get('ceps', [CepController::class, 'index'])->name('ceps');
 
     Route::prefix('edit')->group(function (){
-        Route::get('cadastros/{id}', [CadastrosController::class, 'update'])->name('edit-cadastros');
+        Route::get('cadastros/{id}', [CadastrosController::class, 'show'])->name('edit-cadastros');
+    });
+
+    Route::prefix('salvar')->group(function (){
+        Route::post('cadastros/{id}', [CadastrosController::class, 'update'])->name('edit-cadastros');
     });
 });

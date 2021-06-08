@@ -4,71 +4,68 @@
             {{ __('Cadastros - Analisar') }}
         </h2>
     </x-slot>
-
-    <div class="w-full bg-white rounded shadow-lg p-8 md:max-w-sm md:mx-auto">
-        <form class="w-full max-w-lg">
-            <div class="flex flex-wrap -mx-3 mb-6">
-                <div class="w-full px-3">
-                    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                           for="grid-first-name">
-                        Nome Completo
-                    </label>
-                    <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500
-                            rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name"
-                           type="text" placeholder="nome" value="{{ $cadastro->nome }}">
-                </div>
-            </div>
-            <div class="flex flex-wrap -mx-3 mb-6">
-                <div class="w-full px-3">
-                    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                           for="grid-password">
-                        Password
-                    </label>
-                    <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200
-                            rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                           id="grid-password" type="password" placeholder="******************">
-                    <p class="text-gray-600 text-xs italic">Make it as long and as crazy as you'd like</p>
-                </div>
-            </div>
-            <div class="flex flex-wrap -mx-3 mb-2">
-                <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
-                    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-city">
-                        City
-                    </label>
-                    <input
-                        class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                        id="grid-city" type="text" placeholder="Albuquerque">
-                </div>
-                <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
-                    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-state">
-                        State
-                    </label>
-                    <div class="relative">
-                        <select
-                            class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                            id="grid-state">
-                            <option>New Mexico</option>
-                            <option>Missouri</option>
-                            <option>Texas</option>
-                        </select>
-                        <div
-                            class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
-                            <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/>
-                            </svg>
-                        </div>
+        <div class="flex items-center w-full bg-teal-lighter">
+            <div class="w-full bg-white rounded shadow-lg p-8 m-4 md:max-w-sm md:mx-auto">
+                <form class="mb-4 md:flex md:flex-wrap md:justify-between" action="/admin/salvar/cadastros/{{$cadastro->id}}" method="POST">
+                    @csrf
+                    <div class="flex flex-col mb-6 md:w-full">
+                        <label class="mb-2 uppercase tracking-wide font-bold text-lg text-grey-darkest" for="first_name">Nome Completo</label>
+                        <input class="border py-2 px-3 text-grey-darkest" type="text" name="name" id="name" value="{{ $cadastro->nome }}">
                     </div>
-                </div>
-                <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
-                    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-zip">
-                        CEP
-                    </label>
-                    <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200
-                            rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                           id="grid-zip" type="text" placeholder="CEP" value="{{ $cadastro->cep }}">
-                </div>
+                    <div class="flex flex-col mb-4 md:w-full">
+                        <label class="mb-2 uppercase font-bold text-lg text-grey-darkest" for="email">Email</label>
+                        <input class="border py-2 px-3 text-grey-darkest" type="email" name="email" id="email" value="{{ $cadastro->email }}">
+                    </div>
+
+                    <div class="flex flex-col mb-4 md:w-full">
+                        <label class="mb-2 uppercase font-bold text-lg text-grey-darkest" for="plano">Plano</label>
+                        <input class="border py-2 px-3 text-grey-darkest" type="text" name="plano" id="plano" value="{{ $cadastro->plano }}">
+                    </div>
+
+                    <div class="flex flex-col mb-4 md:w-1/2">
+                        <label class="mb-2 uppercase tracking-wide font-bold text-lg text-grey-darkest" for="telefone">Telefone</label>
+                        <input class="border py-2 px-3 text-grey-darkest md:mr-2" type="text" name="telefone" id="telefone" value="{{ $cadastro->telefone }}">
+                    </div>
+                    <div class="flex flex-col mb-4 md:w-1/2">
+                        <label class="mb-2 uppercase font-bold text-lg text-grey-darkest md:ml-2" for="telefone_2">Telefone - 2</label>
+                        <input class="border py-2 px-3 text-grey-darkest md:ml-2" type="text" name="telefone_2" id="telefone_2" value="{{ $cadastro->telefone_2 }}">
+                    </div>
+
+                    <div class="flex flex-col mb-4 md:w-1/2">
+                        <label class="mb-2 uppercase tracking-wide font-bold text-lg text-grey-darkest" for="cep">CEP</label>
+                        <input class="border py-2 px-3 text-grey-darkest md:mr-2" type="text" name="cep" id="cep" value="{{ $cadastro->cep }}">
+                    </div>
+                    <div class="flex flex-col mb-4 md:w-1/2">
+                        <label class="mb-2 uppercase font-bold text-lg text-grey-darkest md:ml-2" for="last_name">Bairro</label>
+                        <input class="border py-2 px-3 text-grey-darkest md:ml-2" type="text" name="bairro" id="bairro" value="{{ $cadastro->bairro }}">
+                    </div>
+
+                    <div class="flex flex-col mb-4 md:w-full">
+                        <label class="block mt-4">
+                            <span class="text-gray-700">Situação</span>
+                            <select class="form-select mt-1 block w-full" id="status" name="status">
+                                <option value="1" {{ ($cadastro->status == 1) ? 'selected' : ''}}>Ativo</option>
+                                <option value="0" {{ ($cadastro->status == 0) ? 'selected' : ''}}>Negativo</option>
+                                <option value="2" {{ ($cadastro->status == 2) ? 'selected' : ''}}>Em analise</option>
+                            </select>
+                        </label>
+                    </div>
+
+                    <button class="block bg-purple-700 hover:btn-purple-100 text-white uppercase text-lg mx-auto p-4 rounded" type="submit">Enviar</button>
+                </form>
             </div>
-        </form>
-    </div>
+        </div>
 
 </x-app-layout>
+
+<style>
+    .toggle-checkbox:checked {
+        @apply: right-0 border-green-400;
+        right: 0;
+        border-color: #68D391;
+    }
+    .toggle-checkbox:checked + .toggle-label {
+        @apply: bg-green-400;
+        background-color: #68D391;
+    }
+</style>

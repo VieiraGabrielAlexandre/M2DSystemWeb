@@ -59,6 +59,6 @@ Route::prefix('admin')->middleware(['auth:sanctum', 'verified'])->group(function
     });
 
     Route::prefix('salvar')->group(function (){
-        Route::post('cadastros/{id}', [CadastrosController::class, 'update'])->name('edit-cadastros');
+        Route::post('cadastros/{id}', [CadastrosController::class, 'update'])->name('atualizar.cadastro');
     });
 });

@@ -6,6 +6,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Cadastros;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Session;
 
 class CadastrosController extends Controller
 {
@@ -29,19 +30,27 @@ class CadastrosController extends Controller
 
     public function update(Request $request)
     {
-        Cadastros::where('id', $request->id)
-            ->update([
-                'nome' => $request->name,
-                'status' => $request->status,
-                'email' => $request->email,
-                'plano' => $request->plano,
-                'telefone' => $request->telefone,
-                'telefone_2' => $request->telefone_2,
-                'cep' => $request->cep
-            ]);
+        try {
+            Cadastros::where('id', $request->id)
+                ->update([
+                    'nome' => $request->name,
+                    'status' => $request->status,
+                    'email' => $request->email,
+                    'plano' => $request->plano,
+                    'telefone' => $request->telefone,
+                    'telefone_2' => $request->telefone_2,
+                    'cep' => $request->cep
+                ]);
 
-        $cadastro = Cadastros::where('id', $request->id)->first();
+            $cadastro = Cadastros::where('id', $request->id)->first();
 
-        return view('Admin.Edit.cadastros', ['cadastro' => $cadastro]);
+            \session()->flash('success', 'Salvo com sucesso !');
+
+            return redirect(route('edit-cadastros', $cadastro));
+        } catch (\Exception $exception) {
+            \session()->flash('errors', 'Ocorreu um erro ao salvar o cadastro !');
+
+            return redirect(route('edit-cadastros', $cadastro));
+        }
     }
 }

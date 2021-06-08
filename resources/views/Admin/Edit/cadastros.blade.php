@@ -4,9 +4,19 @@
             {{ __('Cadastros - Analisar') }}
         </h2>
     </x-slot>
+        @if(session()->has('success'))
+            <div class="flex items-center bg-green-500 text-white text-sm font-bold px-4 py-3" role="alert">
+                <p>{{ session('success') }}</p>
+            </div>
+        @endif
+        @if(session()->has('errors'))
+            <div class="flex items-center bg-red-500 text-white text-sm font-bold px-4 py-3" role="alert">
+                <p>{{ session('errors') }}</p>
+            </div>
+        @endif
         <div class="flex items-center w-full bg-teal-lighter">
             <div class="w-full bg-white rounded shadow-lg p-8 m-4 md:max-w-sm md:mx-auto">
-                <form class="mb-4 md:flex md:flex-wrap md:justify-between" action="/admin/salvar/cadastros/{{$cadastro->id}}" method="POST">
+                <form class="mb-4 md:flex md:flex-wrap md:justify-between" action="{{ route('atualizar.cadastro', $cadastro->id)}}" method="POST">
                     @csrf
                     <div class="flex flex-col mb-6 md:w-full">
                         <label class="mb-2 uppercase tracking-wide font-bold text-lg text-grey-darkest" for="first_name">Nome Completo</label>

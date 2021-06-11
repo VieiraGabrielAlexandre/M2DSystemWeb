@@ -3,6 +3,7 @@
 use App\Http\Controllers\CadastrosController;
 use App\Http\Controllers\CepController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\NewsletterController;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Route;
 
@@ -55,6 +56,7 @@ Route::prefix('admin')->middleware(['auth:sanctum', 'verified'])->group(function
     Route::get('cadastros', [CadastrosController::class, 'index'])->name('cadastros');
     Route::get('ceps', [CepController::class, 'index'])->name('ceps');
     Route::get('novo-cep', [CepController::class, 'create'])->name('novo-cep');
+    Route::get('newsletter',[NewsletterController::class, 'show'])->name('newsletter');
 
     Route::prefix('edit')->group(function (){
         Route::get('cadastros/{id}', [CadastrosController::class, 'show'])->name('edit-cadastros');

@@ -45,7 +45,6 @@ class CepController extends Controller
 
             return redirect(route('ceps'));
         } catch (\Exception $exception){
-            dd($exception);
             \session()->flash('errors', 'Ocorreu um erro ao salvar o cep !');
 
             return redirect(route('ceps'));
@@ -57,16 +56,16 @@ class CepController extends Controller
         try {
             $this->salvar($request);
 
-            $cep = Ceps::where('id', $request->id)->first();
-
+            $cep = Ceps::where('cep', $request->cep)->first();
             \session()->flash('success', 'Salvo com sucesso !');
 
-            return redirect(route('ceps'));
+            return redirect(route('edit-cep', $cep->id));
 
         } catch (\Exception $exception){
+            $cep = Ceps::where('id', $request->cep)->first();
             \session()->flash('errors', 'Ocorreu um erro ao salvar o cep !');
 
-            return redirect(route('ceps'));
+            return redirect(route('edit-cep', $cep->id));
         }
     }
 }

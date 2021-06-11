@@ -18,7 +18,6 @@
                     <input class="border py-2 px-3 text-grey-darkest" type="text" name="cep" id="cep">
                     <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative" id="hidden" role="alert">
                         <strong class="font-bold">CEP Inválido!</strong>
-                        </span>
                     </div>
                 </div>
                 <div class="flex flex-col mb-4 md:w-full">
@@ -63,22 +62,20 @@
 
 </x-app-layout>
 <script>
-
-        $('#hidden').css('display','none');
-
-       $('#cep').on('change',function (){
-           $cep = $('#cep').val();
-           $.get('/api/cep/consultar?cep=' + $cep)
-                .then(response => {
-                    $('#hidden').css('display', 'none')
-                    $('#bairro').val(response.data.bairro);
-                    $('#rua').val(response.data.logradouro);
-                    $('#cidade').val(response.data.localidade);
-                    $('#uf').val(response.data.uf);
-                })
-                .fail(function (response){
-                    $('#hidden').css('display', 'block')
-                });
-       });
+    $('#hidden').css('display','none');
+    $('#cep').on('change',function (){
+       $cep = $('#cep').val();
+       $.get('/api/cep/consultar?cep=' + $cep)
+            .then(response => {
+                $('#hidden').css('display', 'none')
+                $('#bairro').val(response.data.bairro);
+                $('#rua').val(response.data.logradouro);
+                $('#cidade').val(response.data.localidade);
+                $('#uf').val(response.data.uf);
+            })
+            .fail(function (response){
+                $('#hidden').css('display', 'block')
+            });
+   });
 
 </script>

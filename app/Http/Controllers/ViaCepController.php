@@ -6,7 +6,7 @@ use GuzzleHttp\Client;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 
-class ConsultarCepController extends Controller
+class ViaCepController extends Controller
 {
     public function index(Request $request)
     {

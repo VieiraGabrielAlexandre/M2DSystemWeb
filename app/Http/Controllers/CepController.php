@@ -31,9 +31,9 @@ class CepController extends Controller
     public function salvar(Request $request)
     {
         try {
-            Ceps::where('id', $request->id)
-                ->update([
+            Ceps::updateOrCreate([
                     'cep' => $request->cep,
+                ], [
                     'numero_complemento' => $request->numero_complemento,
                     'rua' => $request->rua,
                     'bairro' => $request->bairro,
@@ -43,16 +43,30 @@ class CepController extends Controller
                     'alterado_por' => 'teste'
                 ]);
 
-            $cep = Ceps::where('id', $request->id)->first();
-
-            \session()->flash('success', 'Salvo com sucesso !');
-
-            return redirect(route('edit-cep', $cep));
+            return redirect(route('ceps'));
         } catch (\Exception $exception){
             dd($exception);
             \session()->flash('errors', 'Ocorreu um erro ao salvar o cep !');
 
-            return redirect(route('edit-cadastros', $cep));
+            return redirect(route('ceps'));
+        }
+    }
+
+    public function update(Request $request)
+    {
+        try {
+            $this->salvar($request);
+
+            $cep = Ceps::where('id', $request->id)->first();
+
+            \session()->flash('success', 'Salvo com sucesso !');
+
+            return redirect(route('ceps'));
+
+        } catch (\Exception $exception){
+            \session()->flash('errors', 'Ocorreu um erro ao salvar o cep !');
+
+            return redirect(route('ceps'));
         }
     }
 }

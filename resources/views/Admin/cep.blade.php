@@ -4,7 +4,11 @@
             {{ __('Cadastros') }}
         </h2>
     </x-slot>
-
+    @if(session()->has('errors'))
+        <div class="flex items-center bg-red-500 text-white text-sm font-bold px-4 py-3" role="alert">
+            <p>{{ session('errors') }}</p>
+        </div>
+    @endif
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">

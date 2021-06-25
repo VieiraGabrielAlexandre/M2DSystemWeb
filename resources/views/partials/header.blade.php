@@ -58,6 +58,7 @@
                                         </div>
                                     </li>
                                     <li><a href="newsletter">Novidades</a></li>
+                                    <li><a href="https://sistema.m2dtelecom.com.br/central_assinante_web/login" style="background-color: orange">Área de Cobertura</a></li>
                                 </ul>
                             </div>
                             <!-- Nav End -->

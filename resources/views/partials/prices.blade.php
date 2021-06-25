@@ -17,7 +17,7 @@
                     <li>24 horas de conexão</li>
                     <li>Garantia de velocidade do plano</li>
                     <li>Monthly updates</li>
-                    <li>Taxa de instalação R$150,00</li>
+                    <li>Taxa de instalação R$250,00</li>
                 </ul>
                 <a href="https://sistema.m2dtelecom.com.br/index.php?tipo=ecommerce&page=produto&id=62">
                     <button type="button" class="btn btn-outline-secondary mb-3">Assinar Agora</button>
@@ -34,7 +34,7 @@
                     <li>24 horas de conexão</li>
                     <li>Garantia de velocidade do plano</li>
                     <li>Monthly updates</li>
-                    <li>Taxa de instalação R$150,00</li>
+                    <li>Taxa de instalação R$250,00</li>
                 </ul>
                 <a href="https://sistema.m2dtelecom.com.br/index.php?tipo=ecommerce&page=produto&id=62">
                     <button type="button" class="btn btn-outline-secondary mb-3">Assinar Agora</button>
@@ -51,8 +51,11 @@
                     <li>24 horas de conexão</li>
                     <li>Garantia de velocidade do plano</li>
                     <li>Monthly updates</li>
-                    <li>Taxa de instalação R$150,00</li>
+                    <li>Taxa de instalação R$250,00</li>
                 </ul>
+                <a href="https://sistema.m2dtelecom.com.br/index.php?tipo=ecommerce&page=produto&id=62">
+                    <button type="button" class="btn btn-outline-secondary mb-3">Assinar Agora</button>
+                </a>  
             </div>
         </div>
         <div class="card card-pricing text-center px-3 mb-4">
@@ -65,7 +68,7 @@
                     <li>24 horas de conexão</li>
                     <li>Garantia de velocidade do plano</li>
                     <li>Monthly updates</li>
-                    <li>Taxa de instalação R$150,00</li>
+                    <li>Taxa de instalação R$250,00</li>
                 </ul>
                 <a href="https://sistema.m2dtelecom.com.br/index.php?tipo=ecommerce&page=produto&id=62">
                     <button type="button" class="btn btn-outline-secondary mb-3">Assinar Agora</button>
@@ -88,7 +91,7 @@
                     <li>24 horas de conexão</li>
                     <li>Garantia de velocidade do plano</li>
                     <li>Monthly updates</li>
-                    <li>Taxa de instalação R$150,00</li>
+                    <li>Taxa de instalação R$250,00</li>
                 </ul>
                 <a href="https://sistema.m2dtelecom.com.br/index.php?tipo=ecommerce&page=produto&id=62">
                     <button type="button" class="btn btn-outline-secondary mb-3">Assinar Agora</button>
@@ -105,7 +108,7 @@
                     <li>24 horas de conexão</li>
                     <li>Garantia de velocidade do plano</li>
                     <li>Monthly updates</li>
-                    <li>Taxa de instalação R$150,00</li>
+                    <li>Taxa de instalação R$250,00</li>
                 </ul>
                 <a href="https://sistema.m2dtelecom.com.br/index.php?tipo=ecommerce&page=produto&id=62">
                     <button type="button" class="btn btn-outline-secondary mb-3">Assinar Agora</button>
@@ -122,7 +125,7 @@
                     <li>24 horas de conexão</li>
                     <li>Garantia de velocidade do plano</li>
                     <li>Monthly updates</li>
-                    <li>Taxa de instalação R$150,00</li>
+                    <li>Taxa de instalação R$250,00</li>
                 </ul>
                 <a href="https://sistema.m2dtelecom.com.br/index.php?tipo=ecommerce&page=produto&id=62">
                     <button type="button" class="btn btn-outline-secondary mb-3">Assinar Agora</button>
@@ -139,7 +142,7 @@
                     <li>24 horas de conexão</li>
                     <li>Garantia de velocidade do plano</li>
                     <li>Monthly updates</li>
-                    <li>Taxa de instalação R$150,00</li>
+                    <li>Taxa de instalação R$250,00</li>
                 </ul>
                 <a href="https://sistema.m2dtelecom.com.br/index.php?tipo=ecommerce&page=produto&id=62">
                     <button type="button" class="btn btn-outline-secondary mb-3">Assinar Agora</button>

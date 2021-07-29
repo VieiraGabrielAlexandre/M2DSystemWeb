@@ -11,7 +11,7 @@
 
                         <!-- Top Contact Info -->
                         <div class="top-contact-info d-flex align-items-center">
-                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Av. Paramaribo,51-Parque Sao Jose-São Paul"><img src="img/core-img/placeholder.png" alt=""> 
+                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Av. Paramaribo,51-Parque Sao Jose-São Paul"><img src="img/core-img/placeholder.png" alt="">
                                 <span style="font-size: 60%;">Av. Paramaribo,51-Parque Sao Jose-São Paulo</span>
                             </a>
                             <a href="#" data-toggle="tooltip" data-placement="bottom" title="m2dtelecom@gmail.com"><img src="img/core-img/message.png" alt=""> <span style="font-size: 60%;">m2dtelecom@gmail.com</span></a>
@@ -44,20 +44,20 @@
                             <!-- Nav Start -->
                             <div class="classynav">
                                 <ul class="mt-4">
-                                    <li><a href="welcome">Home</a></li>
-                                    <li><a href="about">Empresa</a></li>
-                                    <li><a href="plans">Planos</a></li>
-                                    <li><a href="coverage">Área de Cobertura</a></li>
-                                    <li><a href="#">Contate</a>
+                                    <li><a href="welcome" style="font-size: 12px">Home</a></li>
+                                    <li><a href="about" style="font-size: 12px">Empresa</a></li>
+                                    <li><a href="plans" style="font-size: 12px">Planos</a></li>
+                                    <li><a href="coverage" style="font-size: 12px">Área de Cobertura</a></li>
+                                    <li><a href="#" style="font-size: 12px">Contate</a>
                                         <div class="megamenu">
                                             <ul class="single-mega cn-col-4">
-                                                <li><a href="https://sistema.m2dtelecom.com.br/index.php?tipo=artigo&id=20x">Trabalhe conosco</a></li>
-                                                <li><a href="support">Suporte</a></li>
-                                                <li><a href="help">Ajuda</a></li>
+                                                <li><a href="https://sistema.m2dtelecom.com.br/index.php?tipo=artigo&id=20x" style="font-size: 12px">Trabalhe conosco</a></li>
+                                                <li><a href="support" style="font-size: 12px">Suporte</a></li>
+                                                <li><a href="help" style="font-size: 12px">Ajuda</a></li>
                                             </ul>
                                         </div>
                                     </li>
-                                    <li><a href="newsletter">Novidades</a></li>
+                                    <li><a href="newsletter" style="font-size: 12px">Novidades</a></li>
                                     <li><a href="https://sistema.m2dtelecom.com.br/central_assinante_web/login" style="background-color: orange">Área de Cobertura</a></li>
                                 </ul>
                             </div>

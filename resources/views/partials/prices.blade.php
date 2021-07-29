@@ -19,7 +19,7 @@
                     <li>Monthly updates</li>
                     <li>Taxa de instalação R$250,00</li>
                 </ul>
-                <a href="https://sistema.m2dtelecom.com.br/index.php?tipo=ecommerce&page=produto&id=62">
+                <a href=" {{ route('cadastro.cliente', ['plano' => 1])}}">
                     <button type="button" class="btn btn-outline-secondary mb-3">Assinar Agora</button>
                 </a>
             </div>
@@ -36,7 +36,7 @@
                     <li>Monthly updates</li>
                     <li>Taxa de instalação R$250,00</li>
                 </ul>
-                <a href="https://sistema.m2dtelecom.com.br/index.php?tipo=ecommerce&page=produto&id=62">
+                <a href="{{ route('cadastro.cliente', ['plano' => 2])}}">
                     <button type="button" class="btn btn-outline-secondary mb-3">Assinar Agora</button>
                 </a>            
             </div>
@@ -53,7 +53,7 @@
                     <li>Monthly updates</li>
                     <li>Taxa de instalação R$250,00</li>
                 </ul>
-                <a href="https://sistema.m2dtelecom.com.br/index.php?tipo=ecommerce&page=produto&id=62">
+                <a href="{{ route('cadastro.cliente', ['plano' => 3])}}">
                     <button type="button" class="btn btn-outline-secondary mb-3">Assinar Agora</button>
                 </a>  
             </div>
@@ -70,7 +70,7 @@
                     <li>Monthly updates</li>
                     <li>Taxa de instalação R$250,00</li>
                 </ul>
-                <a href="https://sistema.m2dtelecom.com.br/index.php?tipo=ecommerce&page=produto&id=62">
+                <a href="{{ route('cadastro.cliente', ['plano' => 4])}}">
                     <button type="button" class="btn btn-outline-secondary mb-3">Assinar Agora</button>
                 </a> 
             </div>
@@ -93,7 +93,7 @@
                     <li>Monthly updates</li>
                     <li>Taxa de instalação R$250,00</li>
                 </ul>
-                <a href="https://sistema.m2dtelecom.com.br/index.php?tipo=ecommerce&page=produto&id=62">
+                <a href="{{ route('cadastro.cliente', ['plano' => 5])}}">
                     <button type="button" class="btn btn-outline-secondary mb-3">Assinar Agora</button>
                 </a>
             </div>
@@ -110,7 +110,7 @@
                     <li>Monthly updates</li>
                     <li>Taxa de instalação R$250,00</li>
                 </ul>
-                <a href="https://sistema.m2dtelecom.com.br/index.php?tipo=ecommerce&page=produto&id=62">
+                <a href="{{ route('cadastro.cliente', ['plano' => 6])}}">
                     <button type="button" class="btn btn-outline-secondary mb-3">Assinar Agora</button>
                 </a>
             </div>
@@ -127,7 +127,7 @@
                     <li>Monthly updates</li>
                     <li>Taxa de instalação R$250,00</li>
                 </ul>
-                <a href="https://sistema.m2dtelecom.com.br/index.php?tipo=ecommerce&page=produto&id=62">
+                <a href="{{ route('cadastro.cliente', ['plano' => 7])}}">
                     <button type="button" class="btn btn-outline-secondary mb-3">Assinar Agora</button>
                 </a>
             </div>
@@ -144,7 +144,7 @@
                     <li>Monthly updates</li>
                     <li>Taxa de instalação R$250,00</li>
                 </ul>
-                <a href="https://sistema.m2dtelecom.com.br/index.php?tipo=ecommerce&page=produto&id=62">
+                <a href="{{ route('cadastro.cliente', ['plano' => 9])}}">
                     <button type="button" class="btn btn-outline-secondary mb-3">Assinar Agora</button>
                 </a>
             </div>

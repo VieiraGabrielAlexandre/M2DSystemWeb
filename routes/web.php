@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CadastroClienteController;
 use App\Http\Controllers\CadastrosController;
 use App\Http\Controllers\CepController;
 use App\Http\Controllers\HomeController;
@@ -45,6 +46,11 @@ Route::get('/help', function () {
 
 Route::get('/newsletter', function () {
     return view('newsletter');
+});
+
+Route::prefix('cadastro')->group(function (){
+    Route::get('/', [CadastroClienteController::class, 'index'])->name('cadastro.cliente');
+    Route::post('/', [CadastroClienteController::class, 'create'])->name('salvar.cadastro.cliente');
 });
 
 Route::prefix('admin')->middleware(['auth:sanctum', 'verified'])->group(function (){

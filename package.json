@@ -27,6 +27,7 @@
         "@inertiajs/inertia-vue": "^0.6.2",
         "@inertiajs/inertia-vue3": "^0.4.4",
         "@inertiajs/progress": "^0.2.5",
+        "jquery-mask-plugin": "^1.14.16",
         "vue": "^3.0.11"
     }
 }

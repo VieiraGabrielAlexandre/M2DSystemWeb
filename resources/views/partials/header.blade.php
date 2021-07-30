@@ -44,21 +44,21 @@
                             <!-- Nav Start -->
                             <div class="classynav">
                                 <ul class="mt-4">
-                                    <li><a href="welcome" style="font-size: 12px">Home</a></li>
-                                    <li><a href="about" style="font-size: 12px">Empresa</a></li>
-                                    <li><a href="plans" style="font-size: 12px">Planos</a></li>
-                                    <li><a href="coverage" style="font-size: 12px">Área de Cobertura</a></li>
+                                    <li><a href="welcome" style="font-size: 10px">Home</a></li>
+                                    <li><a href="about" style="font-size: 10px">Empresa</a></li>
+                                    <li><a href="plans" style="font-size: 10px">Planos</a></li>
+                                    <li><a href="coverage" style="font-size: 10px">Área de Cobertura</a></li>
                                     <li><a href="#" style="font-size: 12px">Contate</a>
                                         <div class="megamenu">
                                             <ul class="single-mega cn-col-4">
-                                                <li><a href="https://sistema.m2dtelecom.com.br/index.php?tipo=artigo&id=20x" style="font-size: 12px">Trabalhe conosco</a></li>
-                                                <li><a href="support" style="font-size: 12px">Suporte</a></li>
-                                                <li><a href="help" style="font-size: 12px">Ajuda</a></li>
+                                                <li><a href="https://sistema.m2dtelecom.com.br/index.php?tipo=artigo&id=20x" style="font-size: 10px">Trabalhe conosco</a></li>
+                                                <li><a href="support" style="font-size: 10px">Suporte</a></li>
+                                                <li><a href="help" style="font-size: 10px">Ajuda</a></li>
                                             </ul>
                                         </div>
                                     </li>
-                                    <li><a href="newsletter" style="font-size: 12px">Novidades</a></li>
-                                    <li><a href="https://sistema.m2dtelecom.com.br/central_assinante_web/login" style="background-color: orange">Área de Cobertura</a></li>
+                                    <li><a href="newsletter" style="font-size: 10px">Novidades</a></li>
+                                    <li><a href="https://sistema.m2dtelecom.com.br/central_assinante_web/login" style="background-color: orange">Central do assinantes</a></li>
                                 </ul>
                             </div>
                             <!-- Nav End -->

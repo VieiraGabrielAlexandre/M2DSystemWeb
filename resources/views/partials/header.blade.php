@@ -58,7 +58,7 @@
                                         </div>
                                     </li>
                                     <li><a href="newsletter" style="font-size: 10px">Novidades</a></li>
-                                    <li><a href="https://sistema.m2dtelecom.com.br/central_assinante_web/login" style="background-color: orange">Central do assinantes</a></li>
+                                    <li><a href="https://sistema.m2dtelecom.com.br/central_assinante_web/login" style="background-color: orange">Central do assinante</a></li>
                                 </ul>
                             </div>
                             <!-- Nav End -->

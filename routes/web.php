@@ -52,6 +52,10 @@ Route::get('/newsletter', function () {
     return view('newsletter');
 });
 
+Route::get('/clubesims', function () {
+    return view('clubesims');
+});
+
 Route::prefix('cadastro')->group(function (){
     Route::get('/', [CadastroClienteController::class, 'index'])->name('cadastro.cliente');
     Route::post('/', [CadastroClienteController::class, 'create'])->name('salvar.cadastro.cliente');

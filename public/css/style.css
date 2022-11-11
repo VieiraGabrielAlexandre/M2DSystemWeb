@@ -456,7 +456,7 @@ img {
       .header-area .credit-main-menu .classy-navbar .classynav ul li a {
         font-weight: 600;
         text-transform: capitalize;
-        font-size: 15px;
+        font-size: 1.3vh;
         padding: 0 15px;
         color: #ffffff; }
         .header-area .credit-main-menu .classy-navbar .classynav ul li a:hover, .header-area .credit-main-menu .classy-navbar .classynav ul li a:focus {

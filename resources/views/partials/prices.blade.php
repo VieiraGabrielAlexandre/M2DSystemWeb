@@ -14,9 +14,10 @@
             </div>
             <div class="card-body pt-0">
                 <ul class="list-unstyled mb-4">
-                    <li>24 horas de conexão</li>
-                    <li>Garantia de velocidade do plano</li>
-                    <li>Adesão grátis</li>
+                    <li>Estabilidade e Velocidade</li>
+                    <li>Suporte personalizado</li>
+                    <li>Aparelhos de qualidade</li>
+                    <li>Wi-Fi Grátis</li>
                 </ul>
                 <a href=" {{ route('cadastro.cliente', ['plano' => 1])}}">
                     <button type="button" class="btn btn-outline-secondary mb-3">Assinar Agora</button>
@@ -30,9 +31,10 @@
             </div>
             <div class="card-body pt-0">
                 <ul class="list-unstyled mb-4">
-                    <li>24 horas de conexão</li>
-                    <li>Garantia de velocidade do plano</li>
-=                    <li>Taxa de instalação R$250,00</li>
+                    <li>Estabilidade e Velocidade</li>
+                    <li>Suporte personalizado</li>
+                    <li>Aparelhos de qualidade</li>
+                    <li>Wi-Fi Grátis</li>
                 </ul>
                 <a href="{{ route('cadastro.cliente', ['plano' => 2])}}">
                     <button type="button" class="btn btn-outline-secondary mb-3">Assinar Agora</button>
@@ -46,10 +48,10 @@
             </div>
             <div class="card-body pt-0">
                 <ul class="list-unstyled mb-4">
-                    <li>24 horas de conexão</li>
-                    <li>Garantia de velocidade do plano</li>
-                    <li>Monthly updates</li>
-                    <li>Adesão grátis</li>
+                    <li>Estabilidade e Velocidade</li>
+                    <li>Suporte personalizado</li>
+                    <li>Aparelhos de qualidade</li>
+                    <li>Wi-Fi Grátis</li>
                 </ul>
                 <a href="{{ route('cadastro.cliente', ['plano' => 3])}}">
                     <button type="button" class="btn btn-outline-secondary mb-3">Assinar Agora</button>
@@ -63,9 +65,10 @@
             </div>
             <div class="card-body pt-0">
                 <ul class="list-unstyled mb-4">
-                    <li>24 horas de conexão</li>
-                    <li>Garantia de velocidade do plano</li>
-                    <li>Adesão grátis</li>
+                    <li>Estabilidade e Velocidade</li>
+                    <li>Suporte personalizado</li>
+                    <li>Aparelhos de qualidade</li>
+                    <li>Wi-Fi Grátis</li>
                 </ul>
                 <a href="{{ route('cadastro.cliente', ['plano' => 4])}}">
                     <button type="button" class="btn btn-outline-secondary mb-3">Assinar Agora</button>
@@ -85,9 +88,10 @@
             </div>
             <div class="card-body pt-0">
                 <ul class="list-unstyled mb-4">
-                    <li>24 horas de conexão</li>
-                    <li>Garantia de velocidade do plano</li>
-                    <li>Adesão grátis</li>
+                    <li>Estabilidade e Velocidade</li>
+                    <li>Suporte personalizado</li>
+                    <li>Aparelhos de qualidade</li>
+                    <li>Wi-Fi Grátis</li>
                 </ul>
                 <a href="{{ route('cadastro.cliente', ['plano' => 5])}}">
                     <button type="button" class="btn btn-outline-secondary mb-3">Assinar Agora</button>
@@ -95,16 +99,16 @@
             </div>
         </div>
         <div class="card card-pricing text-center px-3 mb-4">
-            <span class="h6 w-60 mx-auto px-4 py-1 rounded-bottom bg-primary text-white shadow-sm" style="background-color: #ffbb38 !important;">150 Megas - Wifi MAX</span>
+            <span class="h6 w-60 mx-auto px-4 py-1 rounded-bottom bg-primary text-white shadow-sm" style="background-color: #ffbb38 !important;">200 Megas - Wifi MAX</span>
             <div class="bg-transparent card-header pt-4 border-0">
-                <h1 class="h3 font-weight-normal text-primary text-center mb-0" style="color: #ffbb38 !important" data-pricing-value="15">R$ <span class="price">89,99</span><span class="h6 text-muted ml-2">/ por mês</span></h1>
+                <h1 class="h3 font-weight-normal text-primary text-center mb-0" style="color: #ffbb38 !important" data-pricing-value="15">R$ <span class="price">149,99</span><span class="h6 text-muted ml-2">/ por mês</span></h1>
             </div>
             <div class="card-body pt-0">
                 <ul class="list-unstyled mb-4">
-                    <li>24 horas de conexão</li>
-                    <li>Garantia de velocidade do plano</li>
-                    <li>Monthly updates</li>
-                    <li>Taxa de instalação R$250,00</li>
+                    <li>Estabilidade e Velocidade</li>
+                    <li>Suporte personalizado</li>
+                    <li>Aparelhos de qualidade</li>
+                    <li>Wi-Fi Grátis</li>
                 </ul>
                 <a href="{{ route('cadastro.cliente', ['plano' => 6])}}">
                     <button type="button" class="btn btn-outline-secondary mb-3">Assinar Agora</button>
@@ -112,15 +116,16 @@
             </div>
         </div>
         <div class="card card-pricing text-center px-3 mb-4">
-            <span class="h6 w-60 mx-auto px-4 py-1 rounded-bottom bg-primary text-white shadow-sm" style="background-color: #ffbb38 !important;">300 Megas - Wifi Max</span>
+            <span class="h6 w-60 mx-auto px-4 py-1 rounded-bottom bg-primary text-white shadow-sm" style="background-color: #ffbb38 !important;">300 Megas - Wifi MAX</span>
             <div class="bg-transparent card-header pt-4 border-0">
                 <h1 class="h4 font-weight-normal text-primary text-center mb-0" style="color: #ffbb38 !important" data-pricing-value="15">R$ <span class="price">189,99</span><span class="h6 text-muted ml-2">/ por mês</span></h1>
             </div>
             <div class="card-body pt-0">
                 <ul class="list-unstyled mb-4">
-                    <li>24 horas de conexão</li>
-                    <li>Garantia de velocidade do plano</li>
-                    <li>Adesão grátis</li>
+                    <li>Estabilidade e Velocidade</li>
+                    <li>Suporte personalizado</li>
+                    <li>Aparelhos de qualidade</li>
+                    <li>Wi-Fi Grátis</li>
                 </ul>
                 <a href="{{ route('cadastro.cliente', ['plano' => 7])}}">
                     <button type="button" class="btn btn-outline-secondary mb-3">Assinar Agora</button>
@@ -128,15 +133,16 @@
             </div>
         </div>
         <div class="card card-pricing text-center px-3 mb-4">
-            <span class="h6 w-60 mx-auto px-4 py-1 rounded-bottom bg-primary text-white shadow-sm"  style="background-color: #ffbb38 !important;">500 Megas - Wifi Max</span>
+            <span class="h6 w-60 mx-auto px-4 py-1 rounded-bottom bg-primary text-white shadow-sm"  style="background-color: #ffbb38 !important;">500 Megas - Wifi MAX</span>
             <div class="bg-transparent card-header pt-4 border-0">
                 <h1 class="h4 font-weight-normal text-primary text-center mb-0" style="color: #ffbb38 !important" data-pricing-value="15">R$ <span class="price">249,99</span><span class="h6 text-muted ml-2">/ por mês</span></h1>
             </div>
             <div class="card-body pt-0">
                 <ul class="list-unstyled mb-4">
-                    <li>24 horas de conexão</li>
-                    <li>Garantia de velocidade do plano</li>
-                    <li>Adesão grátis</li>
+                    <li>Estabilidade e Velocidade</li>
+                    <li>Suporte personalizado</li>
+                    <li>Aparelhos de qualidade</li>
+                    <li>Wi-Fi Grátis</li>
                 </ul>
                 <a href="{{ route('cadastro.cliente', ['plano' => 9])}}">
                     <button type="button" class="btn btn-outline-secondary mb-3">Assinar Agora</button>

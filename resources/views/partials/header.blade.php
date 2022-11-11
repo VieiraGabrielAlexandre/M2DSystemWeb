@@ -59,6 +59,8 @@
                                     </li>
                                     <li><a href="newsletter" style="font-size: 10px">Novidades</a></li>
                                     <li><a href="https://sistema.m2dtelecom.com.br/central_assinante_web/login" style="background-color: orange">Central do assinante</a></li>
+                                    <li><a href="https://sistema.m2dtelecom.com.br/viabilidade-tecnica.php" style="background-color: purple">Viabilidade Têcnica</a></li>
+                                    <li><a href="clubesims" style="background-color: green">Clube M2D</a></li>
                                 </ul>
                             </div>
                             <!-- Nav End -->
